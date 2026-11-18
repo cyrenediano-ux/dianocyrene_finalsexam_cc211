@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of an aspiring IT professional and web developer.">
+  <title>My Portfolio | Aspiring Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top portfolio-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><span class="brand-mark">P.</span> portfolio<span class="brand-dot">/</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme"><i class="bi bi-sun-fill"></i></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section section-pad">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR LEARNING & COLLABORATION</div>
+            <p class="hero-kicker">HELLO, WORLD! I'M</p>
+            <h1 class="hero-title">CYRENE DIANO<span class="accent">.</span></h1>
+            <h2 class="hero-subtitle">An <span id="typedText" class="accent"></span><span class="typing-cursor">|</span></h2>
+            <p class="hero-description">I’m an CS student passionate about technology, creative problem-solving, and building useful digital experiences. I enjoy learning new skills and turning ideas into reality through code.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-accent" href="#projects">Explore my work <i class="bi bi-arrow-up-right ms-2"></i></a>
+              <a class="btn btn-outline-custom" href="#contact">Let's connect</a>
+            </div>
+            <div class="social-row mt-5">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:hello@example.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              <span class="social-caption">LET'S BUILD SOMETHING GREAT</span>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-visual">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="profile-card">
+                <div class="profile-top"><span></span><span></span><span></span><small>PROFILE.EXE</small></div>
+                <div class="avatar-placeholder"><i class="bi bi-person-fill"></i></div>
+                <div class="profile-name">YOUR NAME</div>
+                <div class="profile-role">ASPIRING WEB DEVELOPER</div>
+                <div class="profile-tags"><span>Creative</span><span>Curious</span><span>Always learning</span></div>
+                <div class="profile-code"><span>01</span> const passion = "technology";<br><span>02</span> let ideas = buildSomething();<br><span>03</span> <b>console.log("Hello!");</b></div>
+              </div>
+              <div class="floating-chip chip-code"><i class="bi bi-code-slash"></i> Clean code</div>
+              <div class="floating-chip chip-star"><i class="bi bi-stars"></i> Keep creating</div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint"><span></span> SCROLL TO EXPLORE</div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad section-muted">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">01 / ABOUT</span><h2>A little about <span class="accent">me.</span></h2><p>Get to know the person behind the projects.</p></div>
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-5 reveal">
+            <div class="about-art"><div class="about-art-inner"><i class="bi bi-laptop"></i><span>LEARN. CREATE. REPEAT.</span></div><div class="art-sticker">IT<br>STUDENT</div></div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <h3 class="content-title">Curious mind. Creative approach. <span class="accent">Growing developer.</span></h3>
+            <p class="body-copy">I’m currently studying Information Technology and exploring how technology can solve everyday problems. I’m building my foundation in programming, web development, and software design through coursework and personal projects.</p>
+            <p class="body-copy">I believe every project is an opportunity to learn something new. My goal is to keep improving, work with people who love creating, and develop digital solutions that are both useful and meaningful.</p>
+            <div class="about-facts">
+              <div><strong>01</strong><span>Always curious</span></div>
+              <div><strong>02</strong><span>Problem solver</span></div>
+              <div><strong>03</strong><span>Team player</span></div>
+            </div>
+            <a href="#contact" class="text-link">More about me <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">02 / SKILLS</span><h2>Tools in my <span class="accent">toolbox.</span></h2><p>Technologies I'm learning and using to bring ideas to life.</p></div>
+        <div class="row g-4">
+          <div class="col-lg-6 reveal">
+            <div class="skill-panel">
+              <div class="panel-label">DEVELOPMENT SKILLS</div>
+              <div class="skill-item"><div class="skill-info"><span>HTML</span><span>Learning</span></div><div class="progress"><div class="progress-bar" data-width="85%"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>CSS</span><span>Learning</span></div><div class="progress"><div class="progress-bar" data-width="78%"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span>Learning</span></div><div class="progress"><div class="progress-bar" data-width="62%"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>Python</span><span>Learning</span></div><div class="progress"><div class="progress-bar" data-width="70%"></div></div></div>
+              <div class="skill-item"><div class="skill-info"><span>Java</span><span>Learning</span></div><div class="progress"><div class="progress-bar" data-width="58%"></div></div></div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="row g-3 h-100">
+              <div class="col-6"><div class="tool-card"><i class="bi bi-bootstrap"></i><h5>Bootstrap</h5><p>Responsive layouts</p></div></div>
+              <div class="col-6"><div class="tool-card"><i class="bi bi-git"></i><h5>Git & GitHub</h5><p>Version control</p></div></div>
+              <div class="col-6"><div class="tool-card"><i class="bi bi-brush"></i><h5>UI Design</h5><p>Visual creativity</p></div></div>
+              <div class="col-6"><div class="tool-card"><i class="bi bi-lightbulb"></i><h5>Problem Solving</h5><p>Logical thinking</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad section-muted">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">03 / SELECTED WORK</span><h2>Things I've <span class="accent">created.</span></h2><p>A few projects from my learning journey. Replace these samples with your own work.</p></div>
+        <div class="project-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All projects</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="row g-4" id="projectGrid">
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="web">
+            <article class="project-card"><div class="project-preview preview-one"><i class="bi bi-window-stack"></i><span>01 / WEB DEVELOPMENT</span></div><div class="project-content"><div class="project-meta">HTML · CSS · BOOTSTRAP</div><h3>Personal Portfolio</h3><p>A responsive website introducing my background, skills, and selected work.</p><a href="#contact" class="project-link">View details <i class="bi bi-arrow-up-right"></i></a></div></article>
+          </div>
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="programming">
+            <article class="project-card"><div class="project-preview preview-two"><i class="bi bi-calculator"></i><span>02 / PROGRAMMING</span></div><div class="project-content"><div class="project-meta">PYTHON · LOGIC</div><h3>Simple Calculator</h3><p>A beginner-friendly calculator that performs basic arithmetic operations.</p><a href="#contact" class="project-link">View details <i class="bi bi-arrow-up-right"></i></a></div></article>
+          </div>
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="design">
+            <article class="project-card"><div class="project-preview preview-three"><i class="bi bi-palette"></i><span>03 / UI DESIGN</span></div><div class="project-content"><div class="project-meta">FIGMA · UI DESIGN</div><h3>App Interface Concept</h3><p>A clean interface concept focused on usability and a consistent visual style.</p><a href="#contact" class="project-link">View details <i class="bi bi-arrow-up-right"></i></a></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">04 / EDUCATION</span><h2>My learning <span class="accent">journey.</span></h2><p>Building knowledge one step at a time.</p></div>
+        <div class="timeline reveal">
+          <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">PRESENT</div><div class="timeline-card"><h3>Bachelor of Science in Information Technology</h3><p class="timeline-school">YOUR COLLEGE / UNIVERSITY</p><p>Currently developing skills in programming, data structures, systems, and web technologies.</p></div></div>
+          <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">PREVIOUS</div><div class="timeline-card"><h3>Senior High School</h3><p class="timeline-school">YOUR SENIOR HIGH SCHOOL</p><p>Completed senior high school and prepared for further studies in technology.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad section-muted">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">05 / CONTACT</span><h2>Have an idea? Let's <span class="accent">talk.</span></h2><p>I'm always open to learning, collaboration, and new opportunities.</p></div>
+        <div class="row g-5">
+          <div class="col-lg-5 reveal">
+            <h3 class="content-title">Let's make something <span class="accent">meaningful.</span></h3>
+            <p class="body-copy">Have a question, project idea, or just want to say hello? Send me a message using the form.</p>
+            <div class="contact-detail"><i class="bi bi-envelope"></i><div><small>EMAIL ME</small><a href="mailto:hello@example.com">hello@example.com</a></div></div>
+            <div class="contact-detail"><i class="bi bi-geo-alt"></i><div><small>LOCATION</small><span>Philippines</span></div></div>
+            <div class="social-row mt-4"><a href="https://github.com/" target="_blank" rel="noopener"><i class="bi bi-github"></i></a><a href="https://linkedin.com/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a><a href="mailto:hello@example.com"><i class="bi bi-envelope"></i></a></div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6"><label for="senderName" class="form-label">Your name</label><input class="form-control" id="senderName" name="name" placeholder="Enter your name" required></div>
+                <div class="col-md-6"><label for="senderEmail" class="form-label">Email address</label><input class="form-control" type="email" id="senderEmail" name="email" placeholder="name@example.com" required></div>
+                <div class="col-12"><label for="senderSubject" class="form-label">Subject</label><input class="form-control" id="senderSubject" name="subject" placeholder="What is this about?" required></div>
+                <div class="col-12"><label for="senderMessage" class="form-label">Message</label><textarea class="form-control" id="senderMessage" name="message" rows="5" placeholder="Write your message..." required></textarea></div>
+                <div class="col-12 d-flex flex-wrap align-items-center gap-3"><button class="btn btn-accent" type="submit">Send message <i class="bi bi-send ms-2"></i></button><span id="formFeedback" class="form-feedback" role="status">Frontend demo: opens your email app.</span></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"><a class="navbar-brand" href="#home"><span class="brand-mark">P.</span> portfolio<span class="brand-dot">/</span></a><p>Designed & built with curiosity. © <span id="year"></span> Your Name.</p><a href="#home" class="back-top">BACK TO TOP ↑</a></div></footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
